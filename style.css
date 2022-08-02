@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+
+* {
+    margin: 0
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(89,42,197);
+    background: linear-gradient(234deg, rgba(89,42,197,1) 0%, rgba(230,64,68,1) 100%);
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.app {
+    width: 60%;
+}
+
+@media (max-width:768px) {
+    .app {
+        width: 90%;
+    }
+}
+
+.app h1 {
+    color: white;
+    font-size: 40px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: .5rem .5rem 0 0;
+    background-color: #3C424A;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.app form {
+    display: flex;
+    width: 100%;
+    background-color: #262e4c;
+}
+
+.app form input {
+    border: none;
+    background-color: #343A40;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    width: 90%;
+}
+
+.app form button {
+    border: none;
+    color: white;
+    background-color: #1dd2af;
+    font-size: 25px;
+    font-weight: 600;
+    height: 42px;
+    width: 10%;
+    cursor: pointer;
+}
+
+.app ul {
+    list-style: none;
+    color: #e0e0e0;
+    padding: 0;
+}
+
+.app ul li:nth-child(even) {
+    padding: 10px;
+    background-color: #343A40;
+}
+
+.app ul li:nth-child(odd) {
+    padding: 10px;
+    background-color: #3C424A;
+}
+
+.check {
+    width: 0.8em;
+    height: 0.8em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-appearance: none;
+}
+
+.check:checked {
+    background-color: #1dd2af;
+}
+
+.task {
+    font-size: 18px;
+    padding: 0 10px;
+    width: 80%;
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.task:focus {
+    outline: none;
+}
+
+.completed {
+    color: rgba(192, 192, 192, 0.8);
+    text-decoration: line-through;
+}
+
+svg {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+svg:hover {
+    color: rgb(255, 82, 82);
+}
